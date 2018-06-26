@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head design-width="750">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta charset="UTF-8">
+<title>校园通知示范内容页</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link href="css/common.css" type="text/css" rel="stylesheet">
+<link href="css/main.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+<!--CSS3动画库-->
+<script type="text/javascript" src="js/auto-size.js"></script><!--设置字体大小-->
+</head>
+
+<body>
+<div class="mobile_wrap">
+  <div class="bread-c"><a href="xytz.html">
+    <div class="back"> <img src="images/back-arrow.jpg"> </div>
+    某某校园通知</a> </div>
+  <div data-role = "content-floud" class="p-b-4 white-bg">
+      <div class="xytz-m">
+            <h1>
+            某某某通知标题
+            </h1>
+            <div class="about">
+                <div class="list">
+                    2017-05-12
+                </div>
+                <div class="list">
+                    南京理工大学一食堂
+                </div>
+                <div class="clear">
+                </div>
+          </div>
+           <p>
+              通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。
+        </p>
+        <p>
+        	      通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。通知正文部分，具体一些文字描述或者配图。
+        </p>
+      </div>
+      
+      
+      
+     
+      
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script><!--jQ库-->
+<script>
+$(function(){
+ $(".tab_menu ul li").click(function(){
+ $(this).addClass("on").siblings().removeClass("on"); //切换选中的按钮高亮状态
+ var index=$(this).index(); //获取被按下按钮的索引值，需要注意index是从0开始的
+ $(".tab_box > div").eq(index).show().siblings().hide(); //在按钮选中时在下面显示相应的内容，同时隐藏不需要的框架内容
+ });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head design-width="750">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta charset="UTF-8">
+    <title>校园点名辅导员点名修改</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/common.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/lCalendar.css">
+    <!--CSS3动画库-->
+    <script type="text/javascript" src="js/auto-size.js"></script><!--设置字体大小-->
+</head>
+
+<body class="gray-bg">
+<div class="mobile_wrap xydm-fdy-dmxg">
+    <div class="bread-c"><a href="gqqd.html">
+        <div class="back"> <img src="images/back-arrow.jpg"> </div>
+        修改点名</a> </div>
+    <div data-role = "content-floud" class="p-b-4 ">
+        <div class="top-time-select">
+            <input class="top-input"  placeholder="名称"/>
+            <input class="top-input" id="start-time" type="text" readonly name="input_date" placeholder="开始时间" data-lcalendar="2016-01-11,2017-05-29" />
+            <input class="top-input" id="end-time" type="text" readonly name="input_date2" placeholder="结束时间" data-lcalendar="2016-01-11,2017-05-29" />
+
+            <div class="zjcf">
+                <div class="head">周间重复</div>
+                <div class="main">
+                    <div class="item zjcf">一<div style="height:0.7rem;"></div></div>
+                    <div class="item zjcf">二<div style="height:0.7rem;"></div></div>
+                    <div class="item ">三<div style="height:0.7rem;"></div></div>
+                    <div class="item ">四<div style="height:0.7rem;"></div></div>
+                    <div class="item ">五<div style="height:0.7rem;"></div></div>
+                    <div class="item ">六<div style="height:0.7rem;"></div></div>
+                    <div class="item ">日<div style="height:0.7rem;"></div></div>
+
+            </div>
+
+        </div>
+
+            <div class="single-blue-btn-100">
+                确定
+            </div>
+        <div class="clear">
+        </div>
+
+    </div>
+</div>
+    </div>
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script><!--jQ库-->
+<script src="js/lCalendar.min.js"></script>
+<script>
+    var calendar = new lCalendar();
+    calendar.init({
+        'trigger': '#start-time',
+        'type': 'datetime'
+    });
+    var calendar2 = new lCalendar();
+    calendar2.init({
+        'trigger': '#end-time',
+        'type': 'datetime'
+    });
+    $(function(){
+
+        $(".xydm-fdy-dmxg .zjcf .main .item").click(
+                function() {
+                    $(this).hasClass('zjcf') ? $(this).removeClass("zjcf") : $(this).addClass("zjcf")
+                }
+        );
+    });
+</script>
+</body>
+</html>

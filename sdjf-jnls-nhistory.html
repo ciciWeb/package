@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head design-width="750">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta charset="UTF-8">
+<title>水电缴纳历史</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link href="css/common.css" type="text/css" rel="stylesheet">
+<link href="css/main.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+<!--CSS3动画库-->
+<script type="text/javascript" src="js/auto-size.js"></script><!--设置字体大小-->
+</head>
+
+<body>
+<div class="mobile_wrap">
+  <div class="bread-c"><a href="sdjf-ycj.html">
+    <div class="back"> <img src="images/back-arrow.jpg"> </div>
+    充缴纳历史</a> </div>
+  <div data-role = "content-floud" class="p-b-4 white-bg">
+  
+      <div class="sdjn-history">
+     <div class="tab_menu">
+     <ul class="title">
+     <li class="title-list on">月缴清单</li>
+     <li class="title-list">充缴历史</li>
+    <div class="clear">
+     </div>
+     </ul>
+     </div>
+     
+     <div class="tab_box">
+     <div>
+     	 <div class="no-history">
+         	<img src="images/cjls-infor.png">
+            暂未查询到缴费清单
+         </div>
+ 		   
+     </div>
+     <div>
+     	 
+ 		  <div class="no-history">
+          <img src="images/cjls-infor.png">
+            暂未查询到缴费清单
+         </div> 
+     
+     </div>
+     </div>
+     </div>
+      
+      
+     
+      
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script><!--jQ库-->
+<script>
+$(function(){
+ $(".tab_menu ul li").click(function(){
+ $(this).addClass("on").siblings().removeClass("on"); //切换选中的按钮高亮状态
+ var index=$(this).index(); //获取被按下按钮的索引值，需要注意index是从0开始的
+ $(".tab_box > div").eq(index).show().siblings().hide(); //在按钮选中时在下面显示相应的内容，同时隐藏不需要的框架内容
+ });
+});
+</script>
+</body>
+</html>
